@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Task Manager</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="task-input">
+                <h2>Add New Task</h2>
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <button id="addTask">Add Task</button>
+            </section>
+
+            <section class="task-list">
+                <h2>Your Tasks</h2>
+                <ul id="taskList"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Personal Task Manager</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
