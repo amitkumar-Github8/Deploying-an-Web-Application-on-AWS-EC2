@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* New style for logo image */
+  .logo {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100px;
+  }
+  
+  #todo-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #todo-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #todo-form button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #todo-form button:hover {
+    background: #218838;
+  }
+  
+  #todo-list {
+    list-style: none;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-item:last-child {
+    border-bottom: none;
+  }
+  
+  .todo-item span {
+    flex: 1;
+  }
+  
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .todo-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todo-actions .complete-btn {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .todo-actions .delete-btn {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 600px) {
+    .container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    #todo-form input,
+    #todo-form button {
+      padding: 8px;
+    }
+  }
+  
