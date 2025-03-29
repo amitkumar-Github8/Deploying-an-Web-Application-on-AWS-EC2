@@ -5,7 +5,7 @@
 `
 
 `
- npm install express
+ npm i
 `
 ### Run the server
 `
